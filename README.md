@@ -1,4 +1,4 @@
-# 🚗 Parking management
+# 🚗 Parking management - Work in progress
 
 A parking management software in React.
 
@@ -10,6 +10,4 @@ A parking management software in React.
 
 To-do:
 
-- [ ] Plan the algorithm.
-
-- [ ] Code
+- [ ] Pretty much everything mentioned above
