@@ -1,0 +1,11 @@
+.Car{
+    background-color: var(--background-secondary);
+    margin: 1rem;
+    padding: 0.5rem;
+    height: 5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+

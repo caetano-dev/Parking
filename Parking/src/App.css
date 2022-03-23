@@ -1,0 +1,29 @@
+:root{
+  --background: #282828;
+  --background-secondary: #3c3836;
+  --color: #fbf1c7;
+  --yellow: #d79921;
+  --blue: #458588;
+  --red: #cc241d;
+
+}
+html{
+  background: var(--background);
+  color: var(--color);
+}
+
+.App {
+  background-color: var(--background);
+  color: var(--color);
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+button {
+  font-size: calc(10px + 2vmin);
+}
