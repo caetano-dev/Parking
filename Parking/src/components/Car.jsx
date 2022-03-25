@@ -1,16 +1,16 @@
 import styles from '../styles/Car.module.css'
 
-const Car = ({carPlate}) => {
+const Car = ({plate, time}) => {
 
   return (
     <div className={styles.Car}>
         <p>
           <span>Plate:</span>
-          <span>{carPlate}</span>
+          <span>{plate}</span>
         </p>
         <p>
           <span>Time:</span>
-          <span>12:00</span>
+          <span>{time}</span>
         </p>
         <p>
           <span>Price:</span>

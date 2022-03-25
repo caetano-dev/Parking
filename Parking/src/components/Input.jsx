@@ -4,13 +4,30 @@ import Car from "./Car.jsx"
 
 const Input = () => {
 
-  const [carPlates, setCarPlates] = useState([])
+  const [carObject, setCarObject] = useState([])
+
+  const addCar = (plate, time) => {
+    const car = {
+      plate: plate,
+      time: time
+    }
+    setCarObject(carObject.concat(car))
+  }
 
   let textInput = createRef()
 
+  const CreateDate = () => {
+    let date = new Date()
+    let hour = date.getHours()
+    let minute = date.getMinutes()
+    return `${hour}:${minute}`
+  }
+
   const handleClick = () => {
-    console.log(textInput.current.value)
-    setCarPlates([...carPlates, textInput.current.value])
+    if (textInput.current.value.length === 7) {
+      const time = CreateDate()
+      addCar(textInput.current.value, time)
+    }
   }
 
   return (
@@ -20,7 +37,7 @@ const Input = () => {
     <button onClick={handleClick}>Add</button>
     </div>
     <section>
-    {carPlates.map((carPlate, index) => <Car key={index} carPlate={carPlate} />)}
+     {carObject.map((car, index) => <Car key={index} plate={car.plate} time={car.time}/>)}
     </section>
     </>
   )
