@@ -9,3 +9,9 @@
     align-items: center;
 }
 
+section{
+    width: 80%;
+    margin: 0 10rem 0 10rem;
+    border: 3px solid var(--red);
+    border-radius: 1rem;
+}

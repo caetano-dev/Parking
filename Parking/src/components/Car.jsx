@@ -1,12 +1,12 @@
 import styles from '../styles/Car.module.css'
 
-//a place for the plate, time and price
-const Car = () => {
+const Car = ({carPlate}) => {
+
   return (
     <div className={styles.Car}>
         <p>
           <span>Plate:</span>
-          <span>ABC123</span>
+          <span>{carPlate}</span>
         </p>
         <p>
           <span>Time:</span>
@@ -20,4 +20,4 @@ const Car = () => {
   )
 }
 
-export default Car 
+export default Car;
