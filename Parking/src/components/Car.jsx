@@ -23,15 +23,15 @@ const Car = ({plate, arriveTime, timeForCalculation}) => {
     <div className={styles.Car}>
         <p>
           <span>Plate: </span>
-          <span>{plate}</span>
+          <span className={styles.highlight}>{plate}</span>
         </p>
         <p>
           <span>Arrived at: </span>
-          <span>{arriveTime}</span>
+          <span className={styles.highlight}>{arriveTime}</span>
         </p>
         <p>
           <span>Price: </span>
-          <span>{price}</span>
+          <span className={styles.highlight}>&#36;{price}</span>
         </p>
     </div>
   )

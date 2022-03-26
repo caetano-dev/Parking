@@ -39,10 +39,16 @@ const Input = () => {
     }
   }
 
+  const handleKeyPress = (e) => {
+    if (e.key === 'Enter') {
+      handleClick()
+    }
+  }
+
   return (
     <>
       <div className={styles.Input}>
-        <input type="text" ref={textInput} placeholder="Car plate" />
+        <input type="text" ref={textInput} onKeyPress={handleKeyPress} placeholder="Car plate" />
         <button onClick={handleClick}>Add</button>
       </div>
       <section>
