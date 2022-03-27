@@ -1,6 +1,7 @@
 import styles from '../styles/Input.module.css'
 import { createRef, useState } from 'react'
 import Car from "./Car.jsx"
+import TotalCars from "./TotalCars.jsx"
 
 const Input = () => {
 
@@ -51,6 +52,7 @@ const Input = () => {
         <input type="text" ref={textInput} onKeyPress={handleKeyPress} placeholder="Car plate" />
         <button onClick={handleClick}>Add</button>
       </div>
+      <TotalCars Total={carObject.length} />
       <section>
         {carObject.map((car, index) => <Car key={index} plate={car.plate} arriveTime={car.arrivedAt} timeForCalculation={car.timeForCalculation}/>)}
       </section>

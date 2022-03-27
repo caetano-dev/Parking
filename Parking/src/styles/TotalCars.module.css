@@ -1,0 +1,14 @@
+.TotalCars{
+    display: flex;
+    width: 80%;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin-left: 1rem;
+}
+
+.TotalCars span{
+    color: var(--color);
+    background-color: var(--blue);
+    margin-left: 1rem;
+}

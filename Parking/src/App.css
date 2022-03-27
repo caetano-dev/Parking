@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@600&display=swap');
+
 :root{
   --background: #282828;
   --background-secondary: #3c3836;
@@ -11,15 +13,17 @@
 html{
   background: var(--background);
   color: var(--color);
+  font-family: 'Azeret Mono', monospace;
 }
 
 .App {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+  height: 100vh;
   background-color: var(--background);
   color: var(--color);
-  text-align: center;
 }
 
 @media (prefers-reduced-motion: no-preference) {

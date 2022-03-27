@@ -1,23 +1,15 @@
 import styles from '../styles/Car.module.css'
-import { useState, useEffect } from 'react'
+import { useEffect } from 'react'
 
 const Car = ({plate, arriveTime, timeForCalculation}) => {
-
-  const [updatedTime, setUpdatedTime] = useState(0)
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setUpdatedTime(currentTime())
-    }, 600)
-    return () => clearInterval(interval)
-  }, [])
-
   const currentTime = () => {
     const today = new Date()
     const currentTime = today.getHours() * 60 + today.getMinutes();
     return currentTime
   }
 
-  const price = (100 * (updatedTime - timeForCalculation) / 60).toFixed(2)
+  const pricePerHour = 0.5 
+  const price = (currentTime()- timeForCalculation) * pricePerHour
 
   return (
     <div className={styles.Car}>
