@@ -4,7 +4,9 @@ import { useEffect } from 'react'
 const Car = ({plate, arriveTime, timeForCalculation}) => {
   const currentTime = () => {
     const today = new Date()
-    const currentTime = today.getHours() * 60 + today.getMinutes();
+    let minute = today.getMinutes()
+    minute = minute < 10 ? "0" + minute : minute
+    const currentTime = today.getHours() * 60 + minute;
     return currentTime
   }
 
