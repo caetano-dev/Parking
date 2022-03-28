@@ -23,3 +23,5 @@ A parking management software in React.
 - [ ] Delete old cars when user clicks on them
 - [ ] Search bar can appear when pressing some specific key as a modal
 - [ ] Save the data in local host
+- [ ] Add white theme
+
